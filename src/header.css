@@ -1,0 +1,60 @@
+.header {
+  background-color: aliceblue;
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+  height: 40px;
+  flex-grow: 9;
+}
+
+.linkBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.linkBoxItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(202, 243, 229);
+  box-shadow: 1px 1px 4px black;
+  border-radius: 5px;
+  height: 40px;
+  width: 75px;
+}
+
+.menuLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.menuIcon {
+  height: 20px;
+  width: 20px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+a {
+  font-size: 20px;
+}
