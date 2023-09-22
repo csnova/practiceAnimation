@@ -1,0 +1,148 @@
+:root {
+  --min-width: 200px;
+  --width: 30vw;
+  --min-height: 200px;
+  --height: 30vw;
+  --arrow-color: #ffffff;
+  --color-hover: #00000066;
+  --caption-text: #f2f2f2;
+  --dot-background: #bbb;
+  --dot-background-active: #717171;
+}
+
+.image {
+  box-sizing: border-box;
+  max-height: var(--height);
+  min-height: var(--min-height);
+  max-width: var(--width);
+  min-width: var(--min-width);
+}
+
+.slideshow-container {
+  display: flex;
+  box-sizing: border-box;
+  max-width: var(--width);
+  min-width: var(--min-width);
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  box-sizing: border-box;
+  display: none;
+}
+
+.prev,
+.next {
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--arrow-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  display: none;
+}
+
+.next {
+  box-sizing: border-box;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevBox,
+.nextBox {
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+  height: 15%;
+  margin-top: 0%;
+  padding: 16px;
+}
+
+.nextBox {
+  right: 0;
+}
+
+.prevBox:hover + .prev,
+.nextBox:hover + .next,
+.prev:hover,
+.next:hover {
+  display: block;
+  box-sizing: border-box;
+  background-color: var(--color-hover);
+}
+
+.captionBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--caption-text);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+
+.text {
+  text-align: center;
+  padding: 5px;
+  background-color: var(--color-hover);
+}
+
+.numbertext {
+  box-sizing: border-box;
+  color: var(--caption-text);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: var(--color-hover);
+}
+
+.dotBox {
+  text-align: center;
+}
+
+.dot {
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--dot-background);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  box-sizing: border-box;
+  background-color: var(--dot-background-active);
+}
+
+.fade {
+  box-sizing: border-box;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

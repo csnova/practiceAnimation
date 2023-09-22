@@ -1,6 +1,16 @@
+:root {
+  --background-color: #f0f8ff;
+  --border-color: #808080;
+  --link-color: #82c6fd;
+  --link-text-color: #000000;
+  --shadow-color: #000000;
+  --title-font-size: 30px;
+  --link-font-size: 20px;
+}
+
 .header {
-  background-color: aliceblue;
-  border: 1px solid grey;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
@@ -31,8 +41,8 @@
   flex-direction: column;
   margin: 10px;
   padding: 5px;
-  background-color: rgb(202, 243, 229);
-  box-shadow: 1px 1px 4px black;
+  background-color: var(--link-color);
+  box-shadow: 1px 1px 4px var(--shadow-color);
   border-radius: 5px;
   height: 40px;
   width: 75px;
@@ -43,7 +53,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: var(--link-text-color);
 }
 
 .menuIcon {
@@ -52,9 +62,9 @@
 }
 
 h1 {
-  font-size: 30px;
+  font-size: var(--title-font-size);
 }
 
 a {
-  font-size: 20px;
+  font-size: var(--link-font-size);
 }

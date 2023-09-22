@@ -14,7 +14,11 @@ function addMenuItems(item, index, parent) {
   linkBox.appendChild(newMenuItem);
 }
 
-export default function makeHeader(containerClassName, linkArray) {
+export default function makeHeader(
+  titleContent,
+  containerClassName,
+  linkArray
+) {
   const container = document.querySelector(`.${containerClassName}`);
   if (
     !(
@@ -32,7 +36,7 @@ export default function makeHeader(containerClassName, linkArray) {
     container.appendChild(titleBox);
     const mainTitle = document.createElement("h1");
     mainTitle.classList.add("mainTitle");
-    mainTitle.textContent = "Main Title";
+    mainTitle.textContent = `${titleContent}`;
     titleBox.appendChild(mainTitle);
   }
   const linkBox = document.createElement("div");
